@@ -28,8 +28,29 @@ code {
     monospace;
 }
 
-#root {
-  height: 100%;
+#search-bar {
+  margin-top: 7vmin;
+}
+
+#nav-bar {
+  background-color: var(--darkest);
+  color: white;
+  height: 5vmin;
+}
+
+.auth-page {
+  margin-top: 5%;
+}
+
+.form-label {
+  justify-content: center;
+}
+
+.link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .align-ctr {
@@ -138,6 +159,7 @@ button, a.button {
 button.btn-sm {
   font-size: 1.5vmin;
   padding: .6vmin .8vmin;
+  border-radius: 5vmin;
 }
 
 button.btn-xs {

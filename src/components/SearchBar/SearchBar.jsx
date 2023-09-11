@@ -31,8 +31,9 @@ export default function SearchBar({ accessToken, setAlbums }) {
   };
 
   return (
-    <Container>
-      <InputGroup className="mb-3" size="lg">
+    <Container id="search-bar">
+      <h3 className="text-center">ANY DISCOGRAPHY AT YOUR FINGERTIPS</h3>
+      <InputGroup className="mb-3 " size="lg">
         <FormControl 
           placeholder="Search for an Artist..."
           type="input"
