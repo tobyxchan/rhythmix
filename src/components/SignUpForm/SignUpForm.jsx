@@ -14,7 +14,7 @@ export default class SignUpForm extends Component {
       this.setState({
         [evt.target.name]: evt.target.value,
         error: ''
-      })
+      });
     };
 
     handleSubmit = async (evt) => {
@@ -22,11 +22,15 @@ export default class SignUpForm extends Component {
       try {
         const {name, email, password} = this.state;
         const formData = {name, email, password};
-
-        const user = await SignUpForm(formData);
-        console.log(user)
+        // The promise returned by the signUp service
+        // method will resolve to the user object included
+        // in the payload of the JSON Web Token (JWT)
+        const user = await signUp(formData);
+        this.props.setUser(user);
       } catch {
-        this.setState({ error: 'Sign Up Failed - Please Try Again'});
+        // An error occurred
+        // Probably due to a duplicate email
+        this.setState({ error: 'Sign Up Failed - Try Again' });
       }
     };
 

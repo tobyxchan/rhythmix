@@ -14,8 +14,6 @@ const userSchema = new Schema({
   },
   password: {
     type: String,
-    trim: true,
-    minLength: 3,
     required: true
   }
 }, {
@@ -34,7 +32,6 @@ userSchema.pre('save', async function(next) {
   if (!this.isModified('password')) return next();
   // Update password with computed hash
   this.password = await bcrypt.hash(this.password, SALT_ROUNDS);
-  return next();
 });
 
 module.exports = mongoose.model('User', userSchema);

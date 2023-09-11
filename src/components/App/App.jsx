@@ -1,22 +1,25 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { getUser } from '../../utilities/users-service';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from '../NavBar/NavBar';
 import SearchPage from '../../pages/SearchPage/SearchPage';
 import AuthPage from '../../pages/AuthPage/AuthPage';
 
 export default function App() {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(getUser());
 
   return (
     <div className="App">
-      <NavBar />
       { user ?
-        <Routes>
-          <Route path="/search" element={<SearchPage />} />
-        </Routes>
+        <>
+          <NavBar user={user} />
+          <Routes>
+            <Route path="/" element={<SearchPage />} />
+          </Routes>
+        </>
         :
-        <AuthPage />
+        <AuthPage setUser={setUser} />
       }
     </div>
   );

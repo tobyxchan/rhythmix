@@ -1,17 +1,11 @@
 // Base path of Express route
+import sendRequest from "./send-request";
 const BASE_URL = '/api/users';
 
 export async function signUp(userData) {
-    const res = await fetch(BASE_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(userData)
-    });
-    // Check if request was successful
-    if (res.ok) {
-        // res.json() will resolve to the JWT
-        return res.json();
-    } else {
-        throw new Error('Invalid Sign Up');
-    }
+  return sendRequest(BASE_URL, 'POST', userData);
+}
+
+export async function checkToken() {
+  return sendRequest(`${BASE_URL}/check-token`);
 }
