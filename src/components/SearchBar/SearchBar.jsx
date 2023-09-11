@@ -24,6 +24,7 @@ export default function SearchBar({ accessToken, setAlbums }) {
     let returnedAlbums = await fetch('https://api.spotify.com/v1/artists/' + artistID + '/albums' + '?include_groups=album&market=AU&limit=50', searchParameters)
       .then(response => response.json())
       .then(data => {
+        console.log(data.items);
         setAlbums(data.items);
       });
     // Display albums to the user

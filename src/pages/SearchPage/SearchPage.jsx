@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { format } from 'morgan';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import AlbumCard from '../../components/AlbumCard/AlbumCard';
 
 // Spotify API Details
-const CLIENT_ID = "fa43ddcc49f5429d9f1c8da9336cd96a";
-const CLIENT_SECRET = "6d5166f4f0084e76932937cfebb38f8b";
+const CLIENT_ID = 'fa43ddcc49f5429d9f1c8da9336cd96a';
+const CLIENT_SECRET = '6d5166f4f0084e76932937cfebb38f8b';
 
 export default function SearchPage() {
   const [accessToken, setAccessToken] = useState('');
