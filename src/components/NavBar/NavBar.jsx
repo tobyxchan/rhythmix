@@ -12,11 +12,10 @@ export default function NavBar({ user, setUser }) {
   
   return (
     <Container className="container">
-      <nav id="nav-bar" className="navbar fixed-top navbar-light">
-        <span><strong>{user.name}</strong></span>
-        &nbsp;&nbsp;
-        <Link className="link">Home</Link>
-        &nbsp;&nbsp;
+      <nav id="nav-bar" className="navbar fixed-top navbar-light shadow-lg">
+        <span className="link">{user.name}</span>
+        <Link className="link" to="/">Home</Link>
+        <Link className="link" to="/search">Search</Link>
         <Link className="link" to="" onClick={handleLogOut}>Log Out</Link>
       </nav>
     </Container>

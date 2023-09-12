@@ -31,9 +31,8 @@ export default function SearchBar({ accessToken, setAlbums }) {
   };
 
   return (
-    <Container id="search-bar">
-      <h3 className="text-center">ANY DISCOGRAPHY AT YOUR FINGERTIPS</h3>
-      <InputGroup className="mb-3 " size="lg">
+    <Container className="search-bar">
+      <InputGroup className="mb-3 shadow" size="lg">
         <FormControl 
           placeholder="Search for an Artist..."
           type="input"
@@ -44,7 +43,7 @@ export default function SearchBar({ accessToken, setAlbums }) {
           }}
           onChange={event => setSearchInput(event.target.value)}
         />
-        <Button onClick={ search }>Search</Button>
+        <Button onClick={ search } className="shadow">Search</Button>
       </InputGroup>
     </Container>
   )
