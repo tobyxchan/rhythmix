@@ -27,7 +27,6 @@ export default function SearchBar({ accessToken, setAlbums }) {
         console.log(data.items);
         setAlbums(data.items);
       });
-    // Display albums to the user
   };
 
   return (
