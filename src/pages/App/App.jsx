@@ -21,7 +21,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginForm />} />
             <Route path="/search" element={<SearchPage />} />
-            <Route path="/details" element={<AlbumDetailPage />} />
+            <Route path="/albums/:albumName" element={<AlbumDetailPage />} />
           </Routes>
         </>
         :

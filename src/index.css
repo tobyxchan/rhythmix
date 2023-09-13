@@ -105,7 +105,7 @@ code {
 }
 
 .scroll-y {
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 .section-heading {

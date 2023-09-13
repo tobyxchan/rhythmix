@@ -14,11 +14,14 @@
 
 .album-card {
     background-color: #d5d9f7;
-    width: 28%;
     margin: 1.8vmin;
     padding-top: 3vmin;
     padding-left: 3vmin;
     padding-right: 3vmin;
     padding-bottom: 0.5vmin;
     border: 0.6vmin solid #2b3765;
+}
+
+.album-link {
+    text-decoration: none;
 }

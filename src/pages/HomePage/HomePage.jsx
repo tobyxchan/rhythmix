@@ -1,4 +1,4 @@
-import image from './desktop-wallpaper-dark-blue-navy-blue.jpg';
+import image from './dark-blue.jpg';
 
 export default function HomePage() {
   return (
