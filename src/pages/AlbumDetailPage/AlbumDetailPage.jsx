@@ -14,6 +14,22 @@ export default function AlbumDetailPage() {
   }
   const albumReleaseDate=formatReleaseDate();
 
+  // Spotify Link for Album
+  function getSpotifyAlbumLink() {
+    const internalAlbumLink = album.external_urls.spotify;
+    console.log(`Spotify API returns album url: ${internalAlbumLink}`);
+    return internalAlbumLink;
+  }
+  const albumLink = getSpotifyAlbumLink();
+
+  // Spotify Link for Artist
+  function getSpotifyArtistLink() {
+    const internalArtistLink = album.artists[0].external_urls.spotify;
+    console.log(`Spotify API returns artist url: ${internalArtistLink}`);
+    return internalArtistLink;
+  }
+  const artistLink = getSpotifyArtistLink();
+
   return (
     <div className="main">
       <Card className="album-detail-card container shadow-lg mx-auto">
@@ -28,6 +44,8 @@ export default function AlbumDetailPage() {
               <Card.Text>By {album.artists[0].name}</Card.Text>
               <Card.Text>Released: {albumReleaseDate}</Card.Text>
               <Card.Text>Tracks: {album.total_tracks} Songs</Card.Text>
+              <a href={albumLink} target="_blank" className="btn btn-success spotify-btn">View Album on Spotify</a>
+              <a href={artistLink} target="_blank" className="btn btn-success spotify-btn">View Artist on Spotify</a>
             </Card.Body>
           </div>
         </div>

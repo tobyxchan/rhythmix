@@ -23,7 +23,7 @@ span {
     max-width: 150vmin;
     margin: 1.5vmin;
     padding: 3vmin;
-    border: 0.6vmin solid #2b3765;
+    border: 0.7vmin solid #2b3765;
     overflow: hidden;
 }
 
@@ -38,3 +38,8 @@ span {
     text-align: center;
 }
 
+.spotify-btn {
+    margin-top: 5vmin;
+    margin-left: 1.5vmin;
+    margin-right: 1.5vmin;
+}
