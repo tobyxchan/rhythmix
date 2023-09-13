@@ -40,6 +40,11 @@ code {
   height: 5vmin;
 }
 
+.navbar-text {
+  margin-left: 14%;
+  margin-right: 14%;
+}
+
 .auth-page {
   margin-top: 5%;
 }
@@ -48,7 +53,7 @@ code {
   display: flex;
   justify-content: center;
   resize: both;
-  margin-top: 5.4%;
+  margin-top: 4%;
   height: 80vmin;
   width: auto;
 }
@@ -60,9 +65,17 @@ code {
 
 .home-card-img {
   display: block;
+  filter: blur(3px);
   height: 150%;
   border-radius: 1%;
-  opacity: 0.8;
+  opacity: 0.2;
+  border: 0.7vmin solid black;
+}
+
+.card-img-overlay {
+  margin-top: 27%;
+  margin-left: 13%;
+  margin-right: 13%;
 }
 
 .search-bar {

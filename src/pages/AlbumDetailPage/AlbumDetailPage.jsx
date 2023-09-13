@@ -40,8 +40,8 @@ export default function AlbumDetailPage() {
           <div className="col">
             <Card.Body className="detail-text">
               <span></span>
-              <Card.Title><strong>{album.name}</strong></Card.Title>
-              <Card.Text>By {album.artists[0].name}</Card.Text>
+              <Card.Title className="display-3"><strong>{album.name}</strong></Card.Title>
+              <Card.Text>By {album.artists[0].name}</Card.Text><br></br>
               <Card.Text>Released: {albumReleaseDate}</Card.Text>
               <Card.Text>Tracks: {album.total_tracks} Songs</Card.Text>
               <a href={albumLink} target="_blank" className="btn btn-success spotify-btn">View Album on Spotify</a>

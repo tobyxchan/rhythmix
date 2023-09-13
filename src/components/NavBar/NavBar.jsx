@@ -12,10 +12,10 @@ export default function NavBar({ user, setUser }) {
   
   return (
     <Container className="container">
-      <nav id="nav-bar" className="navbar fixed-top navbar-light shadow-lg">
-        <Link className="link" to="/">Home</Link>
-        <Link className="link" to="/search">Search</Link>
-        <Link className="link" to="" onClick={handleLogOut}>Log Out</Link>
+      <nav id="nav-bar" className="navbar fixed-top shadow-lg">
+        <Link className="link navbar-text text-white" to="/">Home</Link>
+        <Link className="link navbar-text text-white" to="/search">Search</Link>
+        <Link className="link navbar-text text-white" to="" onClick={handleLogOut}>Log Out</Link>
       </nav>
     </Container>
   );
