@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Container, Card } from 'react-bootstrap';
 import './AlbumDetailPage.css';
@@ -33,7 +34,6 @@ export default function AlbumDetailPage({ recommendations }) {
   // Add To Liked
   function addRecommendation() {
     recommendations.push(album);
-    console.log(`Current Recommendations: ${recommendations}`);
   }
 
   // Create Embed Link for Album Player
@@ -59,7 +59,7 @@ export default function AlbumDetailPage({ recommendations }) {
               <Card.Text>By {album.artists[0].name}</Card.Text><br></br>
               <span></span>
               <Card.Text>This album was released on {albumReleaseDate} with a total of {album.total_tracks} songs. Use the player to have a listen and open it on Spotify using the buttons below to view the artist or add it to your library!</Card.Text>
-              <button onClick={addRecommendation} to={'/recommendations'} className="btn btn-primary spotify-btn">Recommend this Album</button>
+              <Link to="/recommendations" className="btn btn-primary spotify-btn" onClick={addRecommendation}>Recommend this Album</Link>
               <a href={albumLink} target="_blank" className="btn btn-success spotify-btn">Open Album on Spotify</a>
               <a href={artistLink} target="_blank" className="btn btn-success spotify-btn">View Artist on Spotify</a>
             </Card.Body>

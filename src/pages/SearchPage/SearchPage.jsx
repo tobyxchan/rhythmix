@@ -4,8 +4,8 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 import AlbumCard from '../../components/AlbumCard/AlbumCard';
 
 // Spotify API Details
-const CLIENT_ID = 'fa43ddcc49f5429d9f1c8da9336cd96a';
-const CLIENT_SECRET = '6d5166f4f0084e76932937cfebb38f8b';
+const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
+const CLIENT_SECRET = process.env.REACT_APP_CLIENT_SECRET;
 
 export default function SearchPage() {
   const [accessToken, setAccessToken] = useState('');

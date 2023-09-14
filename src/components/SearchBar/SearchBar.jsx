@@ -19,7 +19,9 @@ export default function SearchBar({ accessToken, setAlbums }) {
     let artistID = await fetch('https://api.spotify.com/v1/search?q=' + searchInput + '&type=artist', searchParameters)
       .then(response => response.json())
       // Return the Artist ID
-      .then(data => { return data.artists.items[0].id });
+      .then(data => { 
+        console.log(data);
+        return data.artists.items[0].id });
     // With Artist ID, grab all albums from artist
     let returnedAlbums = await fetch('https://api.spotify.com/v1/artists/' + artistID + '/albums' + '?include_groups=album&market=AU&limit=50', searchParameters)
       .then(response => response.json())

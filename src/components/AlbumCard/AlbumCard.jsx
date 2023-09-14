@@ -9,7 +9,7 @@ export default function AlbumCard({ albums }) {
         {albums.map((album, index) => {
           return (
             <Link to={`/albums/${album.name}`} state={album} className="album-link">
-              <Card className="album-card shadow-lg mx-auto">
+              <Card key={index} className="album-card shadow-lg mx-auto">
                 {/* Click card to go to album detail page */}
                 <Card.Img src={album.images[0].url} />
                 <Card.Body>

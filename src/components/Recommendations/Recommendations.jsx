@@ -2,13 +2,7 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Card } from 'react-bootstrap';
 import './Recommendations.css';
 
-export default function Recommendations({ recommendations }) {''
-  // Remove From Suggested
-  function removeRecommendation(index) {
-    recommendations.splice(index, 1);
-    console.log(`Current Recommendations: ${recommendations}`);
-  }
-
+export default function Recommendations({ recommendations }) {
   return (
     <Container className="album-container">
     <h2 className="top-text display-5 text-white text-center"><strong>Recommendations from Rhythmix Users</strong></h2>
@@ -21,10 +15,8 @@ export default function Recommendations({ recommendations }) {''
             </Link>
             <Card.Body>
               <Card.Title>{album.name}</Card.Title>
-              {/* Display just release year of Album */}
               <Card.Text>{album.release_date.slice(0, 4)}</Card.Text>
             </Card.Body>
-            {/* <Link to={'/recommendations'} state={album} className="remove-rec-btn btn btn-danger" onClick={removeRecommendation}><Card.Text>Remove Recommendation</Card.Text></Link> */}
           </Card>
         )
       })}
