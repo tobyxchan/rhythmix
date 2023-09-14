@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Rhythmix
+#### Full-Stack React Appication - Toby Chantharasy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Rhythmix is your ultimate destination for exploring the complete discographies of your favorite music artists. 
+Whether you're a dedicated music enthusiast or just looking to discover new sounds, our platform offers a comprehensive and user-friendly experience to satisfy your musical curiosity.
+Whether you're a die-hard music connoisseur or just getting a peek into the world of an artist, Rhythmix is your go-to platform for discovering, exploring, and connecting with your favorite artists and their music. 
 
-## Available Scripts
 
-In the project directory, you can run:
+## Contents
+- [Features](#features)
+- [Technical Aspects](#tech-aspects)
+- [Screenshots](#screenshots)
+- [Technology](#tech-used)
+- [Reviews](#review)
 
-### `npm start`
+<a name="features"></a>
+### Features
+* Log in/out, create an account
+* Search any artist and view their entire discography
+* Open albums to play in Spotify, or view artist profiles
+* Play songs from any album directly in the browser
+* Add albums to the recommendations page for other users to discover
+* Clean, simple and user-friendly design makes Rhythmix easy to use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<a name="tech-aspects"></a>
+### Technical Aspects
+* Built with JavaScript, CSS and HTML using the Express framework
+* Connects to Spotify Web API in order to retrieve 
+* Code uses efficient MVC design philosophy
+* Demonstrates user CRUD operations using RESTful routing
+* Utilises authentication to lock logged-out users from functions
+* Both Tailwind/DaisyUI and self-written CSS for UI
+* Pushed to GitHub
+* Deployed via Heroku
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a name="tech-used"></a>
+### Technologies Used
+* JavaScript
+* CSS
+* JSX
+* Mongoose
+* Express
+* MongoDB
+* Git
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<a name="screenshots"></a>
+### Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Sign Up Page](/readme_assets/signupform.png) <br>
+![Home Page](/readme_assets/homepage.png) <br>
+![Search Page](/readme_assets/albumsearch.png) <br>
+![Detail Page](/readme_assets/detailpage.png) <br>
+![Recommendation Page](/readme_assets/recommendations.png) <br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<a name="review"></a>
+## Personal Review
+I thoroughly enjoyed my involvement in this collaborative group project where a strong emphasis was placed on effective structuring and task delegation. This experience proved to be immensely valuable, as it not only allowed us to optimize our workflow but also fostered a heightened sense of accountability for individual contributions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+When I contemplate an idea or undertake a coding implementation on my own, there are certain perspectives and potential issues that might not come to light. However, collaborating within a group setting has enabled me to identify these challenges and utilize my time more effectively. Moreover, it has facilitated the enhancement of my initial concepts, particularly in refining specific aspects of the code.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I particularly relished the synergy that emerged while collaborating with my esteemed teammates, Nick and Toby, both of whom demonstrated exceptional prowess. Our collaborative dynamic enabled us to engage in meaningful discussions about code, seamlessly share innovative concepts, and ultimately transform these ideas into tangible outcomes. The process was truly exhilarating and left me with a profound sense of accomplishment.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+----
