@@ -5,9 +5,9 @@
 span {
     display: inline-block;
     width: 70%;
-    height: 5px;
+    height: 0.7vmin;
     background-color: #2b3765;
-    margin-bottom: 5%;
+    margin-bottom: 6%;
 }
 
 .main {
@@ -20,7 +20,8 @@ span {
 
 .album-detail-card {
     background-color: #d5d9f7;
-    max-width: 150vmin;
+    width: 100%;
+    max-height: 100%;
     margin: 1.5vmin;
     padding: 3vmin;
     border: 0.7vmin solid #2b3765;

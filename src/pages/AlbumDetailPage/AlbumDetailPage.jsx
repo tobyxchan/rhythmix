@@ -54,17 +54,18 @@ export default function AlbumDetailPage() {
           <div className="col">
             <Card.Body className="detail-text">
               <span></span>
-              <Card.Title className="display-4"><strong>{album.name}</strong></Card.Title>
+              <Card.Title className="display-5"><strong>'{album.name}'</strong></Card.Title>
               <Card.Text>By {album.artists[0].name}</Card.Text><br></br>
               <span></span>
               <Card.Text>This album was released on {albumReleaseDate} with a total of {album.total_tracks} songs. Use the player to have a listen and open it on Spotify using the buttons below to view the artist or add it to your library!</Card.Text>
+              <button target="_blank" className="btn btn-primary spotify-btn">Add To Liked Albums</button>
               <a href={albumLink} target="_blank" className="btn btn-success spotify-btn">Open Album on Spotify</a>
               <a href={artistLink} target="_blank" className="btn btn-success spotify-btn">View Artist on Spotify</a>
             </Card.Body>
           </div>
         </div>
       </Card>
-    <a href="/search" className="btn btn-primary back-btn">Back to Search</a>
+    <a href="/search" className="btn btn-secondary back-btn">Back to Search</a>
     </div>
   )
 }
