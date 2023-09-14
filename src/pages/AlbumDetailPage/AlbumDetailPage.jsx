@@ -35,21 +35,30 @@ export default function AlbumDetailPage() {
     console.log(detail);
   }
 
+  // Create Embed Link for Album Player
+  const embedLink = 'https://open.spotify.com/embed/album/' + album.id + '?utm_source=generator';
+
   return (
     <div className="main">
       <Card className="album-detail-card container shadow-lg mx-auto">
         <div className="row">
           <div className="col">
-            <Card.Img src={album.images[0].url} className="detail-image"/>
+            <iframe 
+              className="embed"
+              src={embedLink}
+              height="352"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
           </div>
           <div className="col">
             <Card.Body className="detail-text">
               <span></span>
-              <Card.Title className="display-3"><strong>{album.name}</strong></Card.Title>
+              <Card.Title className="display-4"><strong>{album.name}</strong></Card.Title>
               <Card.Text>By {album.artists[0].name}</Card.Text><br></br>
-              <Card.Text>Released: {albumReleaseDate}</Card.Text>
-              <Card.Text>Tracks: {album.total_tracks} Songs</Card.Text>
-              <a href={albumLink} target="_blank" className="btn btn-success spotify-btn">View Album on Spotify</a>
+              <span></span>
+              <Card.Text>This album was released on {albumReleaseDate} with a total of {album.total_tracks} songs. Use the player to have a listen and open it on Spotify using the buttons below to view the artist or add it to your library!</Card.Text>
+              <a href={albumLink} target="_blank" className="btn btn-success spotify-btn">Open Album on Spotify</a>
               <a href={artistLink} target="_blank" className="btn btn-success spotify-btn">View Artist on Spotify</a>
             </Card.Body>
           </div>

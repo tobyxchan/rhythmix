@@ -4,7 +4,7 @@
 
 span {
     display: inline-block;
-    width: 100%;
+    width: 70%;
     height: 5px;
     background-color: #2b3765;
     margin-bottom: 5%;
@@ -40,7 +40,13 @@ span {
 }
 
 .spotify-btn {
-    margin-top: 10vmin;
+    margin-top: 1vmin;
     margin-left: 1.5vmin;
     margin-right: 1.5vmin;
+}
+
+.embed {
+    width: 100%;
+    height: 100%;
+    border-radius: 29px;
 }
