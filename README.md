@@ -58,11 +58,15 @@ Whether you're a die-hard music connoisseur or just getting a peek into the worl
 
 <a name="review"></a>
 ## Personal Review
-I thoroughly enjoyed my involvement in this collaborative group project where a strong emphasis was placed on effective structuring and task delegation. This experience proved to be immensely valuable, as it not only allowed us to optimize our workflow but also fostered a heightened sense of accountability for individual contributions.
+I thoroughly enjoyed this project using React and Express, despite being quite anxious going into it. I had to restart my project a few times due to the Spotify Web API not being implemented properly, which meant that through this repetition, I was able to build upon my knowledge of the React framework and find a solution that fit me best. This experience proved to be immensely valuable, as it not only allowed me to optimize my workflow but also fostered my learning of the technologies involved.
 
-When I contemplate an idea or undertake a coding implementation on my own, there are certain perspectives and potential issues that might not come to light. However, collaborating within a group setting has enabled me to identify these challenges and utilize my time more effectively. Moreover, it has facilitated the enhancement of my initial concepts, particularly in refining specific aspects of the code.
+As a musician myself and avid Spotify user, I was determined to produce a finished product that did justice to hugely successful streaming platforms and music library sites. Through employing different approaches and problem solving from a different angle, I was able to produce something that I am proud of and which evolved as the week progressed, alongside my knowledge of the React framework. Despite this, there are some icebox extra features that I was either not able to implement or did not have the time to in just a week of working on this project, such as database-stored recommended albums and playlist CRUD functionality.
 
-I particularly relished the synergy that emerged while collaborating with my esteemed teammates, Nick and Toby, both of whom demonstrated exceptional prowess. Our collaborative dynamic enabled us to engage in meaningful discussions about code, seamlessly share innovative concepts, and ultimately transform these ideas into tangible outcomes. The process was truly exhilarating and left me with a profound sense of accomplishment.
+In addition to this, I chose to implement the user model manually through the MERN stack rather than using the Spotify API log in, as I wanted to practice the MERN infrastructure and did not want the API to overshadow my own abilities. In hindsight, this restricted the information retrieved by the API, meaning I was not able to do as much with album information once the fetch call had been made, but this just meant that I needed to become creative with how I utilised the object that was returned. For example, I was able to cut and stitch the embed link from the API object so that it rendered an embeded music player on each album's detail page dynamically.
+
+Overall this project has been extremely useful in my development as a software engineer and I can definitely see myself using the React framework in the future, for either work or passion projects as the ease of use far improves on the Node framework.
+
+
 
 
 ----
