@@ -2,10 +2,6 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Card } from 'react-bootstrap';
 import './AlbumCard.css'
 
-// function handleClick() {
-//   console.log(`Clicked on album`);
-// }
-
 export default function AlbumCard({ albums }) {
   return (
     <Container className="album-container">

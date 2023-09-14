@@ -15,7 +15,7 @@ span {
     margin-top: 4%;
     height: 87vmin;
     width: auto;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .album-detail-card {

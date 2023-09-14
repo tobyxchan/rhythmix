@@ -1,0 +1,41 @@
+:root {
+    --lightest: #B7C0E6;
+    --light: #9FACDE;
+    --medium: #8897D6;
+    --dark: #7082CD;
+    --darkest: #586EC5;
+}
+
+h2 {
+    color: white;
+    text-transform: bold;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 3px 2px #2b3765;
+}
+
+.album-container {
+    box-shadow: 20vmin;
+    padding-bottom: 20vmin;
+    width: 90%;
+    margin-top: 10vmin;
+}
+
+.rec-album-card {
+    background-color: #d5d9f7;
+    margin: 1vmin;
+    padding-top: 3vmin;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
+    padding-bottom: 1vmin;
+    border: 0.6vmin solid #2b3765;
+}
+
+.album-link {
+    text-decoration: none;
+}
+
+.top-text {
+    margin-bottom: 5vmin;
+}
+

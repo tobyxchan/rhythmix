@@ -15,6 +15,7 @@ export default function NavBar({ user, setUser }) {
       <nav id="nav-bar" className="navbar fixed-top shadow-lg">
         <Link className="link navbar-text text-white" to="/">Home</Link>
         <Link className="link navbar-text text-white" to="/search">Search</Link>
+        <Link className="link navbar-text text-white" to="/recommendations">Discover</Link>
         <Link className="link navbar-text text-white" to="" onClick={handleLogOut}>Log Out</Link>
       </nav>
     </Container>
