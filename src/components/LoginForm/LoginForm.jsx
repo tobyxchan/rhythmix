@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import * as usersService from '../../utilities/users-service';
 
+const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=fa43ddcc49f5429d9f1c8da9336cd96a&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
+
 export default function LoginForm({ setUser }) {
   const [credentials, setCredentials] = useState({
     email: '',
@@ -24,20 +26,23 @@ export default function LoginForm({ setUser }) {
   }
 
   return (
-    <div className="row align-items-center">
-      <div className="mx-auto col-10 col-md-8 col-lg-4">
-        <h1 className="text-center mb-5">Log In</h1>
-        <div className="form-container">
-          <form autoComplete="off" onSubmit={handleSubmit}>
-            <label className="form-label">Email</label>
-            <input type="text" name="email" value={credentials.email} onChange={handleChange} required />
-            <label className="form-label">Password</label>
-            <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
-            <button type="submit">LOG IN</button>
-          </form>
+    <div>
+      <div className="row align-items-center">
+        <div className="mx-auto col-10 col-md-8 col-lg-4">
+          <h1 className="text-center mb-5">Log In</h1>
+          <div className="form-container">
+            <form autoComplete="off" onSubmit={handleSubmit}>
+              <label className="form-label">Email</label>
+              <input type="text" name="email" value={credentials.email} onChange={handleChange} required />
+              <label className="form-label">Password</label>
+              <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
+              <button type="submit">LOG IN</button>
+            </form>
+          </div>
+          <p className="error-message">&nbsp;{error}</p>
         </div>
-        <p className="error-message">&nbsp;{error}</p>
       </div>
+      <a href={AUTH_URL} className="btn btn-success d-flex justify-content-center spotify-login">Log In with Spotify</a>
     </div>
   )
 }

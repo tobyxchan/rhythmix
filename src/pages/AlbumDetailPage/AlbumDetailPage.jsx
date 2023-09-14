@@ -6,6 +6,7 @@ export default function AlbumDetailPage() {
   // Initialize Album
   const location = useLocation();
   const album = location.state;
+  const detail = album.href;
   
   // Make Date Readable
   function formatReleaseDate() {
@@ -29,6 +30,10 @@ export default function AlbumDetailPage() {
     return internalArtistLink;
   }
   const artistLink = getSpotifyArtistLink();
+
+  function log() {
+    console.log(detail);
+  }
 
   return (
     <div className="main">

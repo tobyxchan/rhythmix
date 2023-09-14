@@ -37,12 +37,13 @@ code {
 #nav-bar {
   background-color: var(--darkest);
   color: white;
-  height: 5vmin;
+  height: 7.5%;
+  width: 100%;
 }
 
 .navbar-text {
-  margin-left: 14%;
-  margin-right: 14%;
+  padding-right: 14%;
+  padding-left: 14%;
 }
 
 .auth-page {
@@ -132,6 +133,12 @@ code {
   padding: .6vmin;
   text-align: center;
   font-size: 2vmin;
+}
+
+.spotify-login {
+  width: 15%;
+  margin-left: 42%;
+  margin-right: 42%;
 }
 
 /* FORM BOX */

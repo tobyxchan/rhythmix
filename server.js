@@ -23,10 +23,12 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(require('./config/checkToken'));
 
+const port = process.env.PORT || 3001;
+
 // Put API routes here, before the "catch all" route
 app.use('/api/users', require('./routes/api/users'));
-
-const port = process.env.PORT || 3001;
+const ensureLoggedIn = require('./config/ensureLoggedIn');
+app.use('/api/liked', ensureLoggedIn, require('./routes/api/liked'));
 
 // The "catch all" route
 app.get('/*', function(req, res) {
