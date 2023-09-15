@@ -5,6 +5,7 @@ Rhythmix is your ultimate destination for exploring the complete discographies o
 Whether you're a dedicated music enthusiast or just looking to discover new sounds, our platform offers a comprehensive and user-friendly experience to satisfy your musical curiosity.
 Whether you're a die-hard music connoisseur or just getting a peek into the world of an artist, Rhythmix is your go-to platform for discovering, exploring, and connecting with your favorite artists and their music. 
 
+[Background Image Source: Artwork by Christina 'Astronuggie'](https://astronuggie.gumroad.com/)
 
 ## Contents
 - [Features](#features)
