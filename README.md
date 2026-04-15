@@ -50,8 +50,8 @@ Whether you're a die-hard music connoisseur or just getting a peek into the worl
 <a name="screenshots"></a>
 ### Screenshots
 
-![Sign Up Page](/readme_assets/signupform.png) <br>
 ![Home Page](/readme_assets/homepage.png) <br>
+![Sign Up Page](/readme_assets/signupform.png) <br>
 ![Search Page](/readme_assets/albumsearch.png) <br>
 ![Detail Page](/readme_assets/detailpage.png) <br>
 ![Recommendation Page](/readme_assets/recommendations.png) <br>
